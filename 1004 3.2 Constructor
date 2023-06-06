@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main {
+	public static class BankAccount{
+		private int Balance;
+		//Name of the constructor should always be same as the name of the class
+		public BankAccount(){
+			Balance = 0;
+		}
+		//It doesn't really matter here, in which the constructor can have 
+		//the identical name but with different arguments behind^^
+		public BankAccount(int Initial) {
+			Balance = Initial * 2;
+		}
+		public int getBalance() {
+			return Balance;
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		BankAccount CCTV = new BankAccount();
+		System.out.println(CCTV.getBalance());
+		BankAccount DDTV = new BankAccount(5000);
+		System.out.println(DDTV.getBalance());
+	}
+
+}
