@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		Counter A = new Counter();
+		A.reset();
+		A.click();
+		A.click();
+		int c = A.getValue();
+		System.out.println(c);
+	}
+  #Encapsulation method 
+	public static class Counter{
+		private int value;
+		public void click() {
+			value = value + 1;
+		}
+		public int getValue() {
+			return value;
+		}
+		public void reset() {
+			value = 0;
+		}
+	}
+}
