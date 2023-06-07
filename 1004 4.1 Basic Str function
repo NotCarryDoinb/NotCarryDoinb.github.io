@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//1. String Concatenation
+		String A = "Doinb";
+		String B = "Doinc";
+		System.out.printf("%s", A+B);//"DoinbDoinc"
+		
+		//2. Substrings 
+		String C = "I will lead to guys to the world final!";
+		String D = C.substring(0,6); // "I will"
+		//**substring(int n) will cut from n to last char of the str 
+		
+		//3. int + str will convert int into str as well
+		D = 1557 + "BLG3-1T1";
+		
+		
+		
+	}
+
+}
